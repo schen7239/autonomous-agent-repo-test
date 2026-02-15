@@ -1,4 +1,4 @@
-# Golang Project Setup
+# Trading System API Setup
 
 ## Getting Started
 
@@ -21,19 +21,29 @@ cd autonomous-agent-repo-test
 go mod tidy
 ```
 
-### Running the Project
+### Running the API
 
-1. Start the application:
+1. Start the API server:
    ```bash
 go run main.go
 ```
 
-### Testing
+### Using the Endpoints
 
-1. Run tests:
-   ```bash
-go test ./...
-```
+#### CreateBuy
+- Endpoint: `/createbuy`
+- Method: `POST`
+- Request Body: `{"symbol": "AAPL", "quantity": 10}`
+
+#### CreateSell
+- Endpoint: `/createsell`
+- Method: `POST`
+- Request Body: `{"symbol": "AAPL", "quantity": 10}`
+
+#### CommitTrade
+- Endpoint: `/committrade`
+- Method: `POST`
+- Request Body: `{"tradeId": "12345"}`
 
 ## Contributing
 
