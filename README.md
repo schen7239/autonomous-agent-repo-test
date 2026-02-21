@@ -1,12 +1,6 @@
-# Trading System API Setup
+# Golang Trading System
 
-## Getting Started
-
-### Prerequisites
-- Go 1.20+
-- Docker
-
-### Installation
+## Setup Instructions
 
 1. Clone the repository:
    ```bash
@@ -20,40 +14,23 @@ cd autonomous-agent-repo-test
    ```bash
 go mod tidy
 ```
-
-### Running the API
-
-1. Start the API server:
+4. Run the application:
    ```bash
 go run main.go
 ```
+5. API Endpoints:
+   - CreateBuy: POST /api/buy
+   - CreateSell: POST /api/sell
+   - CommitTrade: POST /api/commit
 
-### Using the Endpoints
+## Development
 
-#### CreateBuy
-- Endpoint: `/createbuy`
-- Method: `POST`
-- Request Body: `{"symbol": "AAPL", "quantity": 10}`
-
-#### CreateSell
-- Endpoint: `/createsell`
-- Method: `POST`
-- Request Body: `{"symbol": "AAPL", "quantity": 10}`
-
-#### CommitTrade
-- Endpoint: `/committrade`
-- Method: `POST`
-- Request Body: `{"tradeId": "12345"}`
+- Ensure you have Go installed.
+- Use Go modules for dependency management.
+- Run tests with `go test`.
 
 ## Contributing
 
-1. Fork the repository.
-2. Create a new branch for your feature/fix.
-3. Commit your changes.
-4. Push to your branch.
-5. Create a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+- Fork the repository.
+- Create a feature branch.
+- Submit a pull request.
