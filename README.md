@@ -33,17 +33,27 @@ go run main.go
 #### CreateBuy
 - Endpoint: `/createbuy`
 - Method: `POST`
-- Request Body: `{"symbol": "AAPL", "quantity": 10}`
+- Request Body: `{
+  "symbol": "AAPL",
+  "quantity": 10,
+  "price": 150.00
+}`
 
 #### CreateSell
 - Endpoint: `/createsell`
 - Method: `POST`
-- Request Body: `{"symbol": "AAPL", "quantity": 10}`
+- Request Body: `{
+  "symbol": "AAPL",
+  "quantity": 10,
+  "price": 150.00
+}`
 
 #### CommitTrade
 - Endpoint: `/committrade`
 - Method: `POST`
-- Request Body: `{"tradeId": "12345"}`
+- Request Body: `{
+  "tradeId": "12345"
+}`
 
 ## Contributing
 
@@ -56,4 +66,3 @@ go run main.go
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
